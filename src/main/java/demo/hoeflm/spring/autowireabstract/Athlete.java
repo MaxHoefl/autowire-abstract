@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 public abstract class Athlete implements Runnable{
 
 	protected final String name;
-	private final String nationality = "German";
 	
 	@Autowired protected Trainer trainer;
 	
@@ -25,10 +24,4 @@ public abstract class Athlete implements Runnable{
 	public void run() {
 		perform();
 	}
-	
-	public String getNationality()
-	{
-		return nationality;
-	}
-
 }
